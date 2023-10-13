@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen">
+    <div class="">
         <div class="h-9 bg-black text-white flex gap-3 items-center justify-center">
             <p>Sign up and get 20% off to your first order.</p>
             <a href="/" class="underline">Sign Up Now</a>

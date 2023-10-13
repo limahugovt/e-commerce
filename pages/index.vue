@@ -24,16 +24,15 @@
                     <h2 class="font-bold text-[40px]">30,000+</h2>
                     <p>Happy Customers</p>
                 </div>
-
             </div>
-            <div>
-
-            </div>
-        </div>
-        <!-- Imagem -->
-        <div>
-
         </div>
     </section>
-    <Footer/>
+    <section class="bg-black h-[122px] flex px-[100px] items-center gap-[106px]">
+        <img src="@/assets/logos/VersaceLogo.svg" alt="">
+        <img src="@/assets/logos/ZaraLogo.svg" alt="">
+        <img src="@/assets/logos/GucciLogo.svg" alt="">
+        <img src="@/assets/logos/PradaLogo.svg" alt="">
+        <img src="@/assets/logos/CcLogo.svg" alt="">
+    </section>
+    <!-- <Footer/> -->
 </template>
