@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="mb-20">
             <hr class="border-solid border-b-[1px] border-gray-500">
             <p class="pt-6">Shop.co © 2000-2023, All Rights Reserved</p>
         </div>

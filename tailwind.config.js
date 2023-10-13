@@ -3,7 +3,8 @@ export default {
     extend: {
       colors: {
         BgSearch: '#F0F0F0',
-        BgSection: '#F2F0F1'
+        BgSection: '#F2F0F1',
+        BgProduct: '#F0EEED',
       }
     },
     screens: {

@@ -1,6 +1,6 @@
 <template>
     <Header/>
-    <section class="bg-[url('@/assets/icons/ImageBack.svg')] h-[663px] flex items-center">
+    <section class="bg-[url('@/assets/icons/ImageBack.svg')] h-[663px] flex items-center w-[1475px] m-auto bg-BgSection">
         <div class="ml-[100px]">
             <div class="max-w-[577px] grid gap-8">
                 <h1 class="font-bold text-[77px] leading-none">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
@@ -27,12 +27,86 @@
             </div>
         </div>
     </section>
-    <section class="bg-black h-[122px] flex px-[100px] items-center gap-[106px]">
+    <section class="bg-black h-[122px] flex px-[100px] items-center gap-[106px] justify-center">
         <img src="@/assets/logos/VersaceLogo.svg" alt="">
         <img src="@/assets/logos/ZaraLogo.svg" alt="">
         <img src="@/assets/logos/GucciLogo.svg" alt="">
         <img src="@/assets/logos/PradaLogo.svg" alt="">
         <img src="@/assets/logos/CcLogo.svg" alt="">
     </section>
-    <!-- <Footer/> -->
+    <main class="grid">
+        <section class="mt-20 grid justify-center">
+            <h1 class="text-5xl font-bold text-center">NEW ARRIVALS</h1>
+            <div class="flex gap-5 mt-16">
+                <div v-for="product in NewArrivalsProducts" :key="product.id" class="grid gap-2">
+                    <div class="w-[295px] h-[298px] bg-BgProduct rounded-[20px]">
+                        <img :src="`/_nuxt/assets/products/${String(product.image)}.svg`" alt=""  class="rounded-[20px]">
+                    </div>
+                    <p class="font-bold text-base">{{ product.name }}</p>
+                    <div class="flex gap-3">
+                        <img src="@/assets/products/Avaliations.svg" alt="">
+                        <p>{{ product.avaliation }}</p>
+                    </div>
+                    <p class="font-bold text-2xl">{{ product.price }}</p>
+                </div>
+            </div>
+            <div class="w-[218px] h-[52px] grid justify-center items-center border-gray-500 border-solid border-[1px] rounded-3xl m-auto mt-8">
+                <button class="w-full h-full">View All</button>
+            </div>
+        </section>
+
+        <section class="mt-20 grid justify-center">
+            <h1 class="text-5xl font-bold text-center">TOP SELLING</h1>
+            <div class="flex gap-5 mt-16">
+                <div v-for="product in NewArrivalsProducts" :key="product.id" class="grid gap-2">
+                    <div class="w-[295px] h-[298px] bg-BgProduct rounded-[20px]">
+                        <img :src="`/_nuxt/assets/products/${String(product.image)}.svg`" alt=""  class="rounded-[20px]">
+                    </div>
+                    <p class="font-bold text-base">{{ product.name }}</p>
+                    <div class="flex gap-3">
+                        <img src="@/assets/products/Avaliations.svg" alt="">
+                        <p>{{ product.avaliation }}</p>
+                    </div>
+                    <p class="font-bold text-2xl">{{ product.price }}</p>
+                </div>
+            </div>
+            <div class="w-[218px] h-[52px] grid justify-center items-center border-gray-500 border-solid border-[1px] rounded-3xl m-auto mt-8 mb-16">
+                <button class="w-full h-full">View All</button>
+            </div>
+        </section>
+    </main>
+    <Footer/>
 </template>
+<script setup>
+const NewArrivalsProducts = [
+    {
+        id: '1',
+        image: 'Tshirt',
+        name: 'T-SHIRT WITH TAPE DETAILS',
+        avaliation: '4.5',
+        price: '$120'
+    },
+    {
+        id: '2',
+        image: 'Tshirt',
+        name: 'SKINNY FIT JEANS',
+        avaliation: '3.5',
+        price: '$240'
+    },
+    {
+        id: '3',
+        image: 'Tshirt',
+        name: 'CHECKERED SHIRT',
+        avaliation: '4.5',
+        price: '$180'
+    },
+    {
+        id: '4',
+        image: 'Tshirt',
+        name: 'SLEEVE STRIPED T-SHIRT',
+        avaliation: '4.5',
+        price: '$130'
+    }
+]
+
+</script>
