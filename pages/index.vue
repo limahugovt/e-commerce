@@ -74,6 +74,37 @@
                 <button class="w-full h-full">View All</button>
             </div>
         </section>
+
+        <section class="w-[1239px] h-[866px] bg-BgSearch rounded-[40px] m-auto">
+            <div class="mt-[70px] mb-[70px]">
+                <h1 class="text-5xl font-bold text-center">BROWSE BY DRESS STYLE</h1>
+            </div>
+            <div class="grid gap-5 justify-center">
+                <div class="flex gap-5 h-[289px]">
+                    <div class="w-[407px] h-[289px] rounded-[20px] bg-white">
+                        <img src="@/assets/sections/CasualBg.svg" alt="" class="absolute rounded-[20px]">
+                        <h1 class="font-bold text-4xl relative pl-9 pt-[25px]">Casual</h1>
+                    </div>
+    
+                    <div class="w-[684px] h-[289px] rounded-[20px] bg-white">
+                        <img src="@/assets/sections/Formal.svg" alt="" class="absolute rounded-[20px]">
+                        <h1 class="font-bold text-4xl relative pl-9 pt-[25px]">Formal</h1>
+                    </div>
+                </div>
+                
+                <div class="flex gap-5 h-[289px]">
+                    <div class="w-[684px] h-[289px] rounded-[20px] bg-white">
+                        <img src="@/assets/sections/PatyBg.svg" alt="" class="absolute rounded-[20px]">
+                        <h1 class="font-bold text-4xl relative pl-9 pt-[25px]">Paty</h1>
+                    </div>
+    
+                    <div class="w-[407px] h-[289px] rounded-[20px] bg-white">
+                        <img src="@/assets/sections/GymBg.svg" alt="" class="absolute rounded-[20px] pl-12">
+                        <h1 class="font-bold text-4xl relative pl-9 pt-[25px]">Gym</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <Footer/>
 </template>
