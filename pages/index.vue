@@ -1,6 +1,6 @@
 <template>
-    <Header/>
-    <section class="bg-[url('@/assets/icons/ImageBack.svg')] h-[663px] flex items-center w-[1475px] m-auto bg-BgSection">
+    <Teste/>
+    <section class="bg-[url('@/assets/icons/ImageBack.svg')] h-[41.438rem] flex items-center w-[92.188rem] m-auto bg-BgSection">
         <div class="ml-[100px]">
             <div class="max-w-[577px] grid gap-8">
                 <h1 class="font-bold text-[77px] leading-none">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
@@ -106,7 +106,7 @@
             </div>
         </section>
     </main>
-    <Footer/>
+    <Footer class="mt-20"/>
 </template>
 <script setup>
 const NewArrivalsProducts = [

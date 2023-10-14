@@ -7,9 +7,15 @@ export default {
         BgProduct: '#F0EEED',
       }
     },
-    screens: {
+    theme: {
+      screens: {
+        'sm': '320px',
 
-    },
+        'md': '425px',
+
+        'lg': '769px',
+      },
+    }
     
   }
 }
